@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="description" content="Marian show - Cantante - Tributo a los Palmeras, Nino Bravo, Dyango, Camilo Sesto, Jorge Rojas y Los Nocheros, Ricardo Arjona.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.marianshow.com.ar/index.html">
+    <meta property="og:title" content="Marian Show">
+    <meta property="description" content="Tributo a los Palmeras, Nino Bravo, Dyango, Camilo Sesto, Jorge Rojas y Los Nocheros, Ricardo Arjona">
+    <meta property="og:image" content="https://www.marianshow.com.ar/hero.png">
+    <meta property="og:url" content="https://www.marianshow.com.ar/index.html">
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="Tributos, Shows, Palmeras, Nino Bravo, Dyango, Camilo Sesto, Jorge Rojas, Ricardo Arjona">
+    <meta name="sitedomain" content="www.marianshow.com.ar.">
+    <meta name="google-site-verification" content="yao72HNdNkWdwpZhERkLK2YIhC3OQg6Lc0mN7_u34pY">
+    <title>Marian Show</title>
+    <!-- Fuentes de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero" id="home">
+        <!-- Imagen de Fondo en HTML -->
+        <div class="hero-bg">
+            <img src="images/hero.png" alt="Marian Show Fondo">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Barra de Navegación -->
+        <div class="hero-header">
+            <a href="#" class="logo">MARIAN SHOW<span>.</span></a>
+            <button class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+
+        <!-- Panel Overlay que se activa con tu botón existente -->
+<div class="nav-overlay" id="navOverlay">
+    <nav class="overlay-menu">
+        <a href="#tributo" class="nav-link">HOME</a>
+        <a href="#tributo" class="nav-link">TRIBUTO</a>
+        <a href="#sobre-mi" class="nav-link">SOBRE MI</a>
+        <a href="#videos" class="nav-link">VIDEOS</a>
+        <a href="#contacto" class="nav-link">CONTACTO</a>
+    </nav>
+</div>
+
+
+        <!-- Contenido Central del Hero -->
+        <div class="hero-content">
+            <h1 class="hero-title">MARIAN SHOW</h1>
+        </div>
+    </header>
+
+
+<!-- SECCIÓN TRIBUTO CON GALERÍA LIGHTBOX -->
+<section class="tributo-section" id="tributo">
+    <div class="container">
+        <h2 class="section-title">TRIBUTO</h2>
+        
+        <!-- Grilla con Flexbox -->
+        <div class="tributo-grid">
+            <div class="tributo-item">
+                <img src="images/01.jpg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+            <div class="tributo-item">
+                 <img src="images/056.jpeg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+            <div class="tributo-item">
+                 <img src="images/04.jpg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+            <div class="tributo-item">
+                 <img src="images/05.jpeg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+            <div class="tributo-item">
+                 <img src="images/07.png" alt="Tributo Arjona" class="gallery-img">
+            </div>
+            <div class="tributo-item">
+                 <img src="images/10.jpg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+           
+             <div class="tributo-item">
+                 <img src="images/02.jpg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+             <div class="tributo-item">
+                 <img src="images/06.png" alt="Tributo Arjona" class="gallery-img">
+            </div>
+
+            <div class="tributo-item">
+                 <img src="images/08.jpeg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+
+            
+            <div class="tributo-item">
+                 <img src="images/09.jpeg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+ 
+               <div class="tributo-item">
+                 <img src="images/11.jpg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+
+             <div class="tributo-item">
+                 <img src="images/12.png" alt="Tributo Arjona" class="gallery-img">
+            </div>
+ 
+
+             <div class="tributo-item">
+                 <img src="images/010.jpg" alt="Tributo Arjona" class="gallery-img">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://api.whatsapp.com/send/?phone=5491137676464&text&type=phone_number&app_absent=0" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+   <i class="fa-brands fa-whatsapp" class="social-icon" style="font-size: 2rem;"></i>
+</a>
+</section>
+
+<!-- LIGHTBOX MODAL (Visor de imágenes) -->
+<div class="lightbox-modal" id="lightboxModal">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" alt="Imagen ampliada">
+</div>
+
+
+
+
+<!-- SECCIÓN SOBRE MI -->
+<section class="about-section" id="sobre-mi">
+    <div class="about-container">
+        <!-- Columna de texto -->
+        <div class="about-text-content">
+            <h2 class="about-title">SOBRE MI</h2>
+            <p class="about-lead">HACIENDO LO QUE AMO SOBRE LOS ESCENARIOS.</p>
+            <p class="about-description">
+                UN ESPECTACULO INTEGRAL EN VIVO QUE RINDE HOMENAJE A LOS MÁS GRAMDES REFERENTES DE LA MÚSICA: RICARDO ARJONA, LOS PALMERAS, DYANGO, CAMILO SESTO, NINO BRAVO, JORGE ROJAS Y LOS NOCHEROS.
+            </p>
+            <p class="about-description">
+                UNA PROPUESTA QUE COMBINA LA EMOCIÓN DE LAS MEJORES BALADAS ROMÁNTICAS CON TODA LA ENERGÍA Y EL RITMO DEL BAILE POPULAR.
+            </p>
+            <p class="about-info">DISPONIBLE PARA CENAS SHOW, EVENTOS PRIVADOS Y TEATROS.</p>
+            
+            <a href="#contacto" class="about-btn">
+                MAS INFORMACIÓN <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <!-- Columna de imagen -->
+        <div class="about-image-content">
+            <img src="images/sobre-mi.png" alt="Micrófono de estudio - Sobre Mí">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- SECCIÓN VIDEOS -->
+<section class="videos-section" id="videos">
+    <div class="container">
+        <h2 class="section-title">VIDEOS</h2>
+        
+        <!-- Grilla de videos con Flexbox -->
+        <div class="videos-grid">
+            <div class="video-item">
+                <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fmarian.show.7%2Fvideos%2F1140235495338834%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+            <div class="video-item">
+                <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1340053422527855%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+            
+            <div class="video-item">
+                <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F869170242874533%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+
+              <div class="video-item">
+                <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1406439807632711%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+ 
+                   <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src= "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1310600731043036%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+ 
+              <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src= "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F931951496221111%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+              <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src= "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1621408433106514%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+
+               <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1086818770375853%2F&show_text=false&width=267&t=0"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+
+            
+               <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F28933002472990197%2F&show_text=false&width=267&t=0"   style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+
+             
+               <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2459188991216498%2F&show_text=false&width=267&t=0"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+               <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1010317332061371%2F&show_text=false&width=267&t=0"
+                     style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+
+                  <div class="video-item">
+                  <div class="iframe-container">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1969883966965182%2F&show_text=false&width=267&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN CONTACTO Y FOOTER -->
+<footer class="contact-footer" id="contacto">
+    <div class="container">
+        <h2 class="section-title">CONTACTO</h2>
+        
+        <!-- Redes sociales con Flexbox -->
+        <div class="social-grid">
+            <a href="https://www.instagram.com/marianshow/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+               <i class="fa-brands fa-instagram"  class="social-icon"></i>
+            </a>
+            <a href="https://www.facebook.com/marian.show.7" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+               <i class="fa-brands fa-square-facebook" class="social-icon"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5491137676464&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp" class="social-icon"></i>
+            </a>
+        </div>
+
+        <!-- Menú de navegación inferior -->
+        <nav class="footer-nav">
+            <a href="#home">HOME</a>
+            <a href="#tributo">TRIBUTO</a>
+            <a href="#sobre-mi">SOBRE MI</a>
+            <a href="#videos">VIDEOS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+
+        <div class="footer-divider"></div>
+
+        <!-- Gran título de marca -->
+        <div class="footer-brand">
+            <h3>MARIAN SHOW</h3>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <!-- Copyright y Créditos -->
+        <div class="footer-copy">
+            <p>COPYRIGHT © TODOS LOS DERECHOS RESERVADOS A MARIAN SHOW</p>
+            <p>DISEÑADO POR <a href="https://www.bronistudio.com.ar/" target="_blank" style="text-decoration: none; color:#ffffff;"> BRONI STUDIO </a></p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript para la Galería Lightbox -->
+<script src="js/main.js">  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
